@@ -1,0 +1,275 @@
+/* Color scheme swatches I chose:
+.Dark-Teal { color: #026E81; }
+.Teal { color: #00ABBD; }
+.Bright-Blue { color: #0099DD; }
+.Orange { color: #FF9933; }
+.Aqua-5-hex { color: #A1C7E0; }
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+.subtitle {
+  border: 0px solid red;
+}
+
+body {
+  background-image: linear-gradient(to Ttop, rgb(117, 132, 132), white);
+  font-family: sans-serif;
+  font-family: 'EB Garamond', serif;
+  background-color:#A1C7E0;
+  padding-top: 3rem;
+}
+
+.empty-space {
+  border: 0px dotted red;
+  margin-top: 3rem;
+}
+
+.card {
+  border: 0px solid red;
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  margin-top: 70px;
+  padding: 50px;
+}
+
+.card ul {
+  border: 0px solid black;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  align-items: center;
+  width: 8rem;
+}
+
+.card li {
+  border: 0px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.card a {
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+  color: #026E81;
+}
+
+.card a:hover{
+  color:  black;
+}
+
+.profile-image:hover {
+  border: 0px dotted #00ABBD;
+  transform: scale(1.25);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.silly-pic {
+  display: inline-block;
+  transform: scale(.25);
+  margin: 0;
+  padding: 0;
+  border: 3px solid red;
+}
+
+nav {
+  border: 0px solid red;
+  overflow: hidden;
+  position: fixed;
+  background-color: #026E81;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-self:center;
+  color: white;
+}
+
+nav ul {
+  border: 0px dotted blue;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+nav li {
+  border: 0px dashed yellow;
+  width: 8rem;
+  padding: 10px;
+  text-align: center;
+  flex-basis: 25%;
+}
+
+nav a {
+ border: 0px dotted white; 
+ font-size: 1.25rem;
+ color: #FF9933;
+ font-weight: bold;
+ text-decoration: none;
+ padding: .5rem;
+}
+
+nav a:hover{
+  background-color: #FF9933;
+  color: #026E81;
+}
+
+.page-wrapper {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+}
+
+.gallery-map {
+  display: none;
+  max-height: 600px;
+}
+
+.active {
+  display: block;
+}
+
+.map-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  height: 300px;
+}
+
+.btns {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #0099DD;
+  color: white;
+  font-size: 25px;
+  padding: 5px 20px;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #00ABBD;
+}
+
+.prev {
+  margin-right: 30px;
+}
+
+.btn:disabled, .sbmt:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.Edu-Career-pic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Edu-Career-pic container img {
+height: 400px;
+width:auto;
+padding-left: 7rem;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 50%;
+  border-radius: 20px;
+  border-color:#FF9933;
+}
+
+legend {
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+label {
+  padding-top: .5rem;
+}
+
+input, select {
+  border-radius: 10px;
+ }
+
+ textarea {
+	height: 5rem;
+	padding: 1rem;
+ }
+
+ button.sbmt {
+	font-size: 1rem;
+	margin-top: 1rem;
+	background-color: #026E81;
+	color: white;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+button.sbmt:hover {
+	background-color: #FF9933;
+	color: white;
+}
+
+footer {
+  border: 0px solid red;
+  background-color: #026E81;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  color: white;
+  padding-left: 10px;
+}
+
+footer p {
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+footer div {
+  margin-bottom: 0;
+  padding-top: 0;
+  margin-top: 0;
+}

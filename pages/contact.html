@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap"
+		rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet" />
+	<nav class="navbar">
+		<ul>
+			<li><a href="../index.html">🏠 Home</a></li>
+			<li><a href="./about.html">😎 About</a></li>
+			<li><a href="./contact.html">📱 Contact</a></li>
+		</ul>
+	</nav>
+</head>
+
+<body>
+	<div class="empty-space"></div>
+	<div>
+		<h1>Contact Form</h1>
+		<p>If you'd like to get in touch, fill out the form below:</p>
+		<form action="https://formspree.io/f/xjvdkkdl" method="POST" id="form">
+			<div class="wrap">
+				<fieldset>
+					<legend>Your contact information</legend>
+					<label for="FirstName">First name </label>
+					<input type="text" id="FirstName" name="FirstName" required class="required" />
+					<label for="LastName">Last name </label>
+					<input type="text" id="LastName" name="LastName" />
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required class="required" />
+				</fieldset>
+				<fieldset>
+					<legend>Please rate my website </legend>
+					<label for="date">Today's date</label>
+					<input type="date" id="date" name="date" required class="required" />
+					<label for="qty">Between 1-10, how much did you enjoy this site?</label>
+					<input type="number" id="qty" name="qty" min="1" max="10" required class="required" />
+					<label for="words"> How would you describe you visit to my site in words? </label>
+					<select id="words" name="words" required class="required">
+						<option selected>Select one ... </option>
+						<option value="stars"> 5 stars! </option>
+						<option value="thumbs">2 enthusiastic thumbs up!</option>
+						<option value="applause">Encore!</option>
+						<option value="noWords">words cannot describe it</option>
+					</select>
+					<label for="comments">Comments</label>
+					<textarea id="comments" name="comments" placeholder="tell me everything" required
+						class="required"></textarea>
+				</fieldset>
+			</div>
+			<button disabled type="submit" class="sbmt">Submit</button>
+		</form>
+	</div>
+	<script src="../js/contact.js"></script>
+</body>
+<footer>
+	<p id="code">This website has been created with: </p>
+	<div>&#169; Israel Tech Challenge</div>
+	<script src="../js/footer.js"></script>
+</footer>
+
+</html>
